@@ -41,7 +41,7 @@
     // Pobierz elementy video i source
     const videoSource = document.getElementById('videoSource');
     const originalSrc = videoSource.src;
-    const newSrc = 'test.mp4';  // Zmień na nowy URL video
+    const newSrc = 'Test.mp4';  // Zmień na nowy URL video
 
     // Funkcja do sprawdzania szerokości ekranu
     function checkScreenWidth() {
