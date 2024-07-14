@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Regular.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Semibold.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Light.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Meander';
+    src: url('fonts/Meander_4.30-Extralight.otf') format('opentype');
+    font-weight: 200;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    line-height: 1;
+    flex-wrap: wrap;
+    font-family: Meander;
+    /* 'Avenir', sans-serif; */
+    font-size: 14px;
+}
+
+p {
+    font-weight: 300;
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.content {
+    position: relative;
+    width: 100vw;
+    height: 84vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border-top: 1px solid lightgray; */
+    /*border-bottom: 1px solid lightgray;*/
+}
+
+
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    letter-spacing: 1px;
+
+}
+
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+}
+
+.logo img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.contact-me {
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+}
+
+#contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+#contact-btn:hover {
+    color: lightgray;
+
+}
+
+#menu-contact-me.menu-open {
+    right: 0;
+}
+
+#menu-contact-me {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: 100vh;
+    top: 0;
+    right: -45vw;
+    background: #E6E6E6;
+    z-index: 1;
+    transition: right 0.3s ease;
+}
+
+.contact-me-text {
+    position: relative;
+    width: auto;
+    height: auto;
+    line-height: 31.5px;
+    letter-spacing: normal;
+    font-size: 26px;
+}
+
+#menu-about-me.menu-open {
+    right: 0;
+}
+
+#menu-about-me {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 45vw;
+    height: 100vh;
+    top: 0;
+    right: -45vw;
+    background: #E6E6E6;
+    z-index: 1;
+    transition: right 0.3s ease;
+    font-weight: 400;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.photo-me {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    width: auto;
+    height: 95%;
+    overflow: hidden;
+}
+
+.photo-me img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-me-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    top: 10%;
+    width: 100%;
+    height: auto;
+    line-height: 31.5px;
+    letter-spacing: normal;
+    /* border: 1px solid grey;*/
+}
+
+.about-me-text .inner {
+    position: relative;
+    padding: 20px 0px 20px 50px;
+    /* border-bottom: 1px solid #ccc; */
+    flex: 1;
+}
+
+
+#close-btn {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: auto;
+    height: auto;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    color: white;
+}
+
+#close-btn2 {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: auto;
+    height: auto;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#close-btn2:hover {
+    color: white;
+}
+
+.insta {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+}
+
+.insta img {
+    width: 4vh;
+    height: 4vh;
+}
+
+
+
+.about-me {
+    position: relative;
+    width: 10vw;
+    height: 5vh;
+}
+
+.fonts {
+    position: relative;
+    width: 5vw;
+    height: 5vh;
+}
+
+#about-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#about-btn:hover {
+    color: lightgray;
+}
+
+#fonts-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#fonts-btn:hover {
+    color: lightgray;
+}
+
+.video {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.link {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 20px 0px;
+    transition: background-color 0.3s, color 0.3s;
+    /* border: 1px solid transparent; */
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.link:hover {
+    color: lightgray;
+}
+
+/* Mobilki mobilki - ogólne */
+@media (max-width: 768px) {
+
+    html {
+        overflow: hidden;
+    }
+
+    body {
+        width: 100vw;
+        max-width: 100vw;
+        height: 100vh;
+        max-height: 100vh;
+    }
+
+    .header {
+        max-width: 100vw;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #contact-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .content {
+        width: 100vw;
+        max-width: 100vw;
+        height: 84vh;
+        max-height: 84vh;
+    }
+
+
+    .footer {
+        width: 100vw;
+        max-width: 100vw;
+        font-size: 13px;
+        position: relative;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        flex-wrap: wrap;
+        letter-spacing: 1px;
+    }
+
+
+    .contact-me {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+    }
+
+
+    #menu-contact-me {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        right: -100vw;
+    }
+
+    #contact-btn {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .contact-me-text {
+        position: relative;
+        width: auto;
+        height: auto;
+        line-height: 31.5px;
+        letter-spacing: normal;
+        font-size: 26px;
+    }
+
+    #close-btn {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        width: 100vw;
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    #menu-about-me {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: -100vw;
+    }
+
+
+    .about-me-text .inner {
+        padding: 15px 0px 15px 25px;
+    }
+
+    .photo-me {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        width: auto;
+        height: 90%;
+        overflow: hidden;
+    }
+
+    .photo-me img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-me {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    #about-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    #close-btn2 {
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        width: 100vw;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .video {
+        position: relative;
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .video video {
+        position: relative;
+        width: 90vw;
+        height: 90vw;
+    }
+
+}
