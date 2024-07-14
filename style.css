@@ -141,7 +141,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100svw;
     height: 100svh;
     overflow: hidden;
     line-height: 1;
@@ -157,7 +157,7 @@ p {
 
 .header {
     position: relative;
-    width: 100vw;
+    width: 100svw;
     height: 8svh;
     display: flex;
     align-items: center;
@@ -169,7 +169,7 @@ p {
 
 .content {
     position: relative;
-    width: 100vw;
+    width: 100svw;
     height: 84svh;
     display: flex;
     align-items: center;
@@ -182,7 +182,7 @@ p {
 
 .footer {
     position: relative;
-    width: 100vw;
+    width: 100svw;
     height: 8svh;
     display: flex;
     align-items: center;
@@ -211,7 +211,7 @@ p {
 
 .contact-me {
     position: relative;
-    width: 10vw;
+    width: 10svw;
     height: 5svh;
 }
 
@@ -242,10 +242,10 @@ p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 45vw;
+    width: 45svw;
     height: 100svh;
     top: 0;
-    right: -45vw;
+    right: -45svw;
     background: #E6E6E6;
     z-index: 1;
     transition: right 0.3s ease;
@@ -272,10 +272,10 @@ p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 45vw;
+    width: 45svw;
     height: 100svh;
     top: 0;
-    right: -45vw;
+    right: -45svw;
     background: #E6E6E6;
     z-index: 1;
     transition: right 0.3s ease;
@@ -370,13 +370,13 @@ p {
 
 .about-me {
     position: relative;
-    width: 10vw;
+    width: 10svw;
     height: 5svh;
 }
 
 .fonts {
     position: relative;
-    width: 5vw;
+    width: 5svw;
     height: 5svh;
 }
 
@@ -447,14 +447,14 @@ p {
     }
 
     body {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100svw;
+        max-width: 100svw;
         height: 100svh;
         max-height: 100svh;
     }
 
     .header {
-        max-width: 100vw;
+        max-width: 100svw;
         font-size: 13px;
         display: flex;
         align-items: center;
@@ -474,16 +474,16 @@ p {
     }
 
     .content {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100svw;
+        max-width: 100svw;
         height: 84svh;
         max-height: 84svh;
     }
 
 
     .footer {
-        width: 100vw;
-        max-width: 100vw;
+        width: 100svw;
+        max-width: 100svw;
         font-size: 13px;
         position: relative;
         height: 8svh;
@@ -511,9 +511,9 @@ p {
         align-content: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100svw;
         height: 100svh;
-        right: -100vw;
+        right: -100svw;
     }
 
     #contact-btn {
@@ -538,17 +538,17 @@ p {
         position: absolute;
         top: 50px;
         right: 0px;
-        width: 100vw;
+        width: 100svw;
         text-align: center;
         font-size: 18px;
     }
 
 
     #menu-about-me {
-        width: 100vw;
+        width: 100svw;
         height: 100svh;
         top: 0;
-        right: -100vw;
+        right: -100svw;
     }
 
 
@@ -593,21 +593,21 @@ p {
         position: absolute;
         top: 50px;
         right: 0px;
-        width: 100vw;
+        width: 100svw;
         text-align: center;
         font-size: 18px;
     }
 
     .video {
         position: relative;
-        width: 90vw;
-        height: 90vw;
+        width: 90svw;
+        height: 90svw;
     }
 
     .video video {
         position: relative;
-        width: 90vw;
-        height: 90vw;
+        width: 90svw;
+        height: 90svw;
     }
 
 }
