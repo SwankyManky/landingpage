@@ -233,6 +233,7 @@ p {
 
 #menu-contact-me.menu-open {
     right: 0;
+    transform: translateX(0);
 }
 
 #menu-contact-me {
@@ -248,6 +249,7 @@ p {
     background: #E6E6E6;
     z-index: 1;
     transition: right 0.3s ease;
+    transform: translateX(100%);
 }
 
 .contact-me-text {
@@ -261,6 +263,7 @@ p {
 
 #menu-about-me.menu-open {
     right: 0;
+    transform: translateX(0);
 }
 
 #menu-about-me {
@@ -279,6 +282,7 @@ p {
     font-weight: 400;
     overflow-y: scroll;
     overflow-x: hidden;
+    transform: translateX(100%);
 }
 
 .photo-me {
