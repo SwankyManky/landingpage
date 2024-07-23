@@ -258,7 +258,7 @@ p {
     height: auto;
     line-height: 31.5px;
     letter-spacing: normal;
-    font-size: 26px;
+    font-size: 14px;
 }
 
 #menu-about-me.menu-open {
@@ -568,10 +568,12 @@ p {
         top: 50%;
         transform: translateY(-50%);
         right: -20px;
-        width: auto;
-        height: 90%;
+        width: 50svw;
+        max-width: 50svw;
+        height: auto;
         overflow: hidden;
     }
+
 
     .photo-me img {
         width: 100%;
