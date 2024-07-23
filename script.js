@@ -38,6 +38,25 @@
     menu.classList.remove('menu-open');
   });
 
+// Function to hide menus if clicked outside
+function hideMenus(event) {
+  var contactMenu = document.getElementById('menu-contact-me');
+  var aboutMenu = document.getElementById('menu-about-me');
+
+  // Check if the click is outside of the contact menu
+  if (!contactMenu.contains(event.target) && !event.target.matches('#contact-btn')) {
+    contactMenu.classList.remove('menu-open');
+  }
+
+  // Check if the click is outside of the about menu
+  if (!aboutMenu.contains(event.target) && !event.target.matches('#about-btn')) {
+    aboutMenu.classList.remove('menu-open');
+  }
+}
+
+// Add event listener to the document
+document.addEventListener('click', hideMenus);
+//
     // Pobierz elementy video i source
     const videoSource = document.getElementById('videoSource');
     const originalSrc = videoSource.src;
