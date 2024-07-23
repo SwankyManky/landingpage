@@ -289,9 +289,9 @@ p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 50px;
-    width: auto;
-    height: 95%;
+    right: 0px;
+    width: 15svw;
+    height: auto;
     overflow: hidden;
 }
 
