@@ -316,7 +316,8 @@ p {
 
 .about-me-text .inner {
     position: relative;
-    padding: 20px 0px 20px 50px;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
     /* border-bottom: 1px solid #ccc; */
     flex: 1;
 }
@@ -560,7 +561,7 @@ p {
 
 
     .about-me-text .inner {
-        padding: 15px 0px 15px 25px;
+        padding: 15px 25px 15px 25px;
     }
 
     .photo-me {
