@@ -610,14 +610,14 @@ p {
 
     .video {
         position: relative;
-        width: 90svw;
-        height: 90svw;
+        width: 80svw;
+        height: 80svw;
     }
 
     .video video {
         position: relative;
-        width: 90svw;
-        height: 90svw;
+        width: 80svw;
+        height: 80svw;
     }
 
 }
