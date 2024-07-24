@@ -537,9 +537,10 @@ p {
         position: relative;
         width: auto;
         height: auto;
+        text-align: center;
         line-height: 31.5px;
         letter-spacing: normal;
-        font-size: 26px;
+        font-size: 18px;
     }
 
     #close-btn {
