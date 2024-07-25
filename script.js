@@ -60,7 +60,7 @@ document.addEventListener('click', hideMenus);
     // Pobierz elementy video i source
     const videoSource = document.getElementById('videoSource');
     const originalSrc = videoSource.src;
-    const newSrc = 'Test.mp4';  // Zmień na nowy URL video
+    const newSrc = 'Showreel_2024.mp4';  // Zmień na nowy URL video
 
     // Funkcja do sprawdzania szerokości ekranu
     function checkScreenWidth() {
